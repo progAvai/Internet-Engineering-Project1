@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>لیست کارهای روزانه</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📌 لیست کارهای من</h1>
+
+    <!-- جعبه ورودی -->
+    <div class="input-box">
+      <input id="taskInput" type="text" placeholder="یک کار جدید بنویس...">
+      <button id="addBtn">➕ افزودن</button>
+    </div>
+
+    <!-- نوار ابزار -->
+    <div class="toolbar">
+      <input id="searchInput" type="text" placeholder="جستجو...">
+      <select id="filter">
+        <option value="all">همه</option>
+        <option value="done">انجام شده</option>
+        <option value="todo">انجام نشده</option>
+      </select>
+    </div>
+
+    <!-- لیست کارها -->
+    <ul id="taskList"></ul>
+
+    <!-- فوتر -->
+    <div class="footer">
+      <span id="counter">0 کار</span>
+      <button id="clearAll">🗑 پاک کردن همه</button>
+      <button id="themeToggle">🌙 حالت تیره</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
